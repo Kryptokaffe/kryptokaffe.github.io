@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.initSqlJs = window.initSqlJs || {};
+        window.initSqlJs.locateFile = file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/${file}`;
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="logo-container">
+        <img src="kryptokaffe2k24.png" alt="Logo" id="logo">
+    </div>
+    <div id="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question"></div>
+        <div id="answers"></div>
+        <div id="result" style="display:none;"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
